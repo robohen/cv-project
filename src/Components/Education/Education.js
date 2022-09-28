@@ -29,9 +29,9 @@ function Education() {
       <SectionHeading title="Education" />
 
       {edu.map((eduHist) => (
-        <DisplayEdu eduHist={eduHist} key={eduHist.id} deleteEdu={deleteEdu} />
+        <DisplayEducation eduHist={eduHist} key={eduHist.id} deleteEdu={deleteEdu} />
       ))}
-      <EduExpForm
+      <EduHist
         displayForm={displayForm}
         handleDisplay={handleDisplay}
         saveEdu={saveEdu}
